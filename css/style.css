@@ -1,0 +1,911 @@
+/* ==================================================
+                 COMMON CSS STARTS
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(../fonts/Nexa\ Bold.otf);
+    font-family: "Nexa Bold";
+}
+
+@font-face {
+    src: url(../fonts/Nexa\ Light.otf);
+    font-family: "Nexa Light";
+}
+
+@font-face {
+    src: url(../fonts/Nexa\ Regular.otf);
+    font-family: "Nexa Regular";
+}
+
+body {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 40px 0 46px;
+    background-attachment: fixed !important;
+}
+
+/* ==================================================
+                 COMMON CSS ENDS
+===================================================== */
+
+/* ==================================================
+                  HEADER PART STARTS
+===================================================== */
+.head_menu ul {
+    float: right;
+    display: flex;
+    margin-top: 15px;
+}
+
+.head_menu ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Nexa Regular";
+    padding-left: 19px;
+}
+
+.head_menu ul li a span {
+    color: #fa8729;
+    padding-left: 5px;
+}
+
+.head_menu ul li {
+    position: relative;
+}
+
+.head_menu ul li:after {
+    position: absolute;
+    content: "";
+    left: 9px;
+    top: 7px;
+    width: 2px;
+    height: 15px;
+    background: #af4c18;
+}
+
+.head_menu ul li:first-child:after {
+    display: none;
+}
+
+/* ==================================================
+                  HEADER PART ENDS
+===================================================== */
+/* ==================================================
+                  MENU PART STARTS
+===================================================== */
+.main_menu {
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main_menu ul li a {
+    padding: 0 !important;
+    padding: 15px 0 !important;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Nexa Bold";
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover {
+    color: #f5893f;
+}
+
+.cont_border {
+    border: 1px solid #fa8729;
+}
+
+.search_form .form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.search_form .form-control {
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
+}
+
+.search_form button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+/* ==================================================
+                  MENU PART ENDS
+===================================================== */
+/* ==================================================
+                  BANNER PART STARTS
+===================================================== */
+.banner_item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 600px;
+}
+
+.banner_slider ul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 999;
+}
+
+.banner_slider ul li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #fa8729;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 4px;
+}
+
+.banner_slider ul li.slick-active button {
+    width: 15px;
+    height: 15px;
+    background: #fa8729;
+}
+
+/* ==================================================
+                  BANNER PART ENDS
+===================================================== */
+/* ==================================================
+                  OUR PRODUCT PART STARTS
+===================================================== */
+#product_part {
+    padding: 80px 0 60px;
+}
+
+.section_head h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-family: "Nexa Bold";
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section_head h2::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -13px;
+    width: 100%;
+    height: 3px;
+    background: #af4c18;
+}
+
+.section_head h2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -13px;
+    width: 100px;
+    height: 3px;
+    background: #fa8729;
+    z-index: 11;
+}
+
+.section_head a {
+    float: right;
+    color: #fa8729;
+    font-size: 13px;
+    font-family: "Nexa Bold";
+    margin-top: -10px;
+}
+
+.section_head a i {
+    color: #fa8729;
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.product_main {
+    margin-top: 30px;
+    padding: 50px 40px 20px 40px;
+    background: #fff;
+    border: 3px solid #fa8729;
+}
+
+.product_main h3 {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.product_main h6 {
+    color: #959595;
+    font-size: 12px;
+    font-family: "Nexa Light";
+}
+
+.product_main p {
+    color: #959595;
+    font-size: 13px;
+    font-family: "Nexa Light";
+    position: relative;
+}
+
+.product_main p:after {
+    position: absolute;
+    content: "";
+    left: -39px;
+    bottom: -16px;
+    width: 143%;
+    height: 1px;
+    background: #e6e6e6;
+}
+
+.product_main a {
+    color: #fa8729;
+    font-size: 16px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+
+
+.pad_top {
+    padding-top: 130px;
+}
+
+.pd_top {
+    padding-top: 31px;
+}
+
+/* ==================================================
+                  OUR PRODUCT PART ENDS
+===================================================== */
+/* ==================================================
+                  NEW ARRIVAL PART STARTS
+===================================================== */
+#new_arrival {
+    padding-bottom: 60px;
+}
+
+.arrival_main {
+    margin-top: 30px;
+    padding: 50px 40px 20px 40px;
+    background: #fff;
+    border: 3px solid #fa8729;
+}
+
+.arrival_main h3 {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.arrival_main h6 {
+    color: #959595;
+    font-size: 12px;
+    font-family: "Nexa Light";
+    position: relative;
+}
+
+.arrival_main h6::after {
+    position: absolute;
+    content: "";
+    left: -39px;
+    bottom: -16px;
+    width: 143%;
+    height: 1px;
+    background: #e6e6e6;
+}
+
+.arrival_main h5 {
+    color: #333333;
+    font-size: 13px;
+    font-family: "Nexa Bold";
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.arrival_main h4 {
+    color: #fa8729;
+    font-size: 16px;
+    font-family: "Nexa Bold";
+}
+
+.pd_top_bed {
+    padding-top: 157px;
+}
+
+.pd_top_chair {
+    padding-top: 89px;
+}
+
+.pd_top_table {
+    padding-top: 175px;
+}
+
+/* ==================================================
+                  NEW ARRIVAL PART ENDS
+===================================================== */
+/* ==================================================
+                  SUPPORT PART STARTS
+===================================================== */
+#support_part {
+    padding-bottom: 60px;
+}
+
+.support_main {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 5px 0 10px;
+}
+
+.support_like i {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #d04070;
+    text-align: center;
+    line-height: 100px;
+    color: #dda75d;
+    font-size: 40px;
+}
+
+.support_like h3 {
+    color: #4d200d;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.fon_back_1 {
+    background: #28a72f;
+}
+
+.support_check i {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #28a72f;
+    text-align: center;
+    line-height: 100px;
+    color: #dda75d;
+    font-size: 40px;
+}
+
+.support_check h3 {
+    color: #4d200d;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.support_contact i {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #197cd8;
+    text-align: center;
+    line-height: 100px;
+    color: #dda75d;
+    font-size: 40px;
+}
+
+.support_contact h3 {
+    color: #4d200d;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.support_contact i {
+    -moz-box-shadow: inset 0 0 10px #141415;
+    -webkit-box-shadow: inset 0 0 10px #141415;
+    box-shadow: inset 0 0 10px #141415;
+}
+
+/* ==================================================
+                  SUPPORT PART ENDS
+===================================================== */
+/* ==================================================
+                  FOOTER PART STARTS
+===================================================== */
+.footer_inner {
+    padding: 40px 30px 60px;
+    background: rgba(0, 0, 0, 0.66);
+}
+
+.footer_main h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer_main ul li a {
+    color: #d3d3d3;
+    font-size: 14px;
+    font-family: "Nexa Regular";
+    padding: 10px 0;
+}
+
+.footer_main_social h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer_main_social ul {
+    display: flex;
+}
+
+.footer_main_social ul li a i {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+
+.pad_main {
+    margin-left: -93px;
+}
+
+.body_img {
+    position: fixed;
+    right: 0;
+    top: 150px;
+}
+
+.footer_warning h3 {
+    padding: 10px 0;
+    background: #f5893f;
+    color: #241007;
+    font-size: 14px;
+}
+
+/* ==================================================
+                  FOOTER PART ENDS
+===================================================== */
+/* ==================================================
+              HOME/INDEX PAGE ENDS HERE
+===================================================== */
+/* ==================================================
+                 ABOUT PAGE BANNER STARTS
+===================================================== */
+.banner_item_page {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 104px 0 14px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.my_menu li a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.my_menu .breadcrumb-item.active {
+    color: #fff;
+}
+
+.my_menu .breadcrumb-item+.breadcrumb-item::before {
+    color: #ffff;
+}
+
+/* ==================================================
+                 ABOUT PAGE BANNER ENDS
+===================================================== */
+/* ==================================================
+                  ABOUT PAGE  PART STARTS
+===================================================== */
+.about_page_inner {
+    padding: 35px 0 400px;
+    background: #fff;
+    padding-left: 15px;
+}
+
+.about_us_head h2 {
+    color: #333333;
+    font-size: 22px;
+    font-family: "Nexa Bold";
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.about_page_subhead h3 {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Nexa Bold";
+    padding-bottom: 20px;
+}
+
+.about_page_subhead p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Nexa Regular";
+    padding-bottom: 30px;
+}
+
+.about_page_subhead ul li a {
+    color: #333333;
+    font-size: 14px;
+    font-family: "Nexa Regular";
+}
+
+.about_page_subhead ul li a i {
+    color: #f5893f;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* ==================================================
+                  ABOUT PAGE  PART ENDS
+===================================================== */
+/* ==================================================
+            PRODUCT DETAILS  PART STARTS
+===================================================== */
+.details_pad {
+    padding-top: 40px;
+    background: #fff;
+}
+
+.details_img {
+    padding: 80px 60px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.details_small_img-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.details_small_img {
+    padding: 25px 20px 0 20px;
+}
+
+.details_small_img-item {
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* remove margin from parent */
+.details_small_img .slick-list {
+    margin: 0 -10px;
+}
+
+/* add margin into child  */
+.details_small_img .slick-slide {
+    margin: 0 10px;
+}
+
+/* click to change the border color */
+.details_small_img .slick-slide.slick-current .details_small_img-item {
+    border: 2px solid #f5893f;
+}
+
+
+
+.details_head h3 {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.details_head h3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 21px;
+    width: 100%;
+    height: 2px;
+    background: #dcdcdc;
+}
+
+.product_name h4 {
+    color: #333333;
+    font-size: 16px;
+    font-family: "Nexa Bold";
+}
+
+.product_details p {
+    color: #656565;
+    font-size: 15px;
+    font-family: "Nexa Regular";
+}
+
+.product_details p.last {
+    color: #fa8729;
+    font-size: 21px;
+}
+
+/* ==================================================
+            PRODUCT DETAILS  PART STARTS
+===================================================== */
+/* ==================================================
+            RELATED PRODUCT PART STARTS
+===================================================== */
+.related_inner {
+    padding: 80px 0 80px;
+    background: #fff;
+}
+
+.related_head h3 {
+    color: #333333;
+    font-size: 26px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    margin-left: 40px;
+    position: relative;
+}
+
+.related_head h3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -15px;
+    width: 403%;
+    height: 3px;
+    background: #e6e6e6;
+}
+
+.related_prduct_main {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: #fff;
+    border: 3px solid #e6e6e6;
+}
+
+.related_prduct_main h3 {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.related_prduct_main h6 {
+    color: #959595;
+    font-size: 12px;
+    font-family: "Nexa Light";
+}
+
+.related_prduct_main p {
+    color: #959595;
+    font-size: 13px;
+    font-family: "Nexa Light";
+    position: relative;
+}
+
+.related_prduct_main p:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -16px;
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+}
+
+.related_prduct_main a {
+    color: #fa8729;
+    font-size: 16px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+
+.mar_left {
+    margin-left: 30px;
+}
+
+.product_custom {
+    padding-top: 64px;
+}
+
+
+/* ==================================================
+            RELATED PRODUCT PART ENDS
+===================================================== */
+/* ==================================================
+            CONTACT PAGE PART STARTS
+===================================================== */
+.contact_page_inner {
+    padding: 40px 0 530px;
+    background: #fff;
+}
+
+.contact_page_head h3 {
+    color: #333333;
+    font-size: 26px;
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.contact_head_office {
+    padding-left: 30px;
+}
+
+.contact_head_office h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #2d3e50;
+    font-size: 22px;
+    font-family: "Nexa Bold";
+}
+
+.contact_head_office p {
+    color: #484848;
+    font-size: 13px;
+    line-height: 23px;
+    font-family: "Nexa Light";
+    padding-bottom: 25px;
+}
+
+.contact_head_office span {
+    color: #484848;
+    font-size: 13px;
+    line-height: 23px;
+    font-family: "Nexa Light";
+}
+
+.form_head h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #2d3e50;
+    font-size: 22px;
+    font-family: "Nexa Bold";
+}
+
+.contact_form input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    background: transparent;
+    padding-left: 10px;
+}
+
+.contact_form input::placeholder {
+    color: #d6d6d6;
+    font-size: 14px;
+    font-family: "Nexa Regular";
+    font-style: italic;
+}
+
+.contact_form textarea {
+    width: 705px;
+    height: 200px;
+    background: transparent;
+    border: 1px solid #d6d6d6;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.contact_form textarea::placeholder {
+    color: #d6d6d6;
+    font-size: 14px;
+    font-family: "Nexa Regular";
+    font-style: italic;
+}
+
+.contact_form button {
+    float: right;
+    padding: 0 50px;
+    line-height: 43px;
+    border: 1px solid #f5893f;
+    background: #f5893f;
+    margin-right: 44px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Nexa Bold";
+}
+
+/* ==================================================
+            CONTACT PAGE PART ENDS
+===================================================== */
